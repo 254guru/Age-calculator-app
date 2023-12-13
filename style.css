@@ -20,3 +20,13 @@ main {
     align-items: center;
     height: 100vh;
 }
+
+section {
+    width: 650px;
+    height: auto;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    border-bottom-right-radius: 170px;
+    padding: 40px;
+    box-shadow: 0 0.9rem 1.2rem 0 hsl(0, 0%, 86%);
+}
