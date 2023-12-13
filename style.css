@@ -30,3 +30,35 @@ section {
     padding: 40px;
     box-shadow: 0 0.9rem 1.2rem 0 hsl(0, 0%, 86%);
 }
+
+form {
+    display: flex;
+    flex-direction: row;
+    width: 480px;
+    justify-content: space-between;
+    color: hsl(0, 1%, 44%);
+    text-transform: uppercase;
+}
+
+.date-container {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    letter-spacing: 0.2rem;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid hsl(0, 0%, 86%);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    width: 110px;
+    font-size: 32px;
+    font-weight: 700px;
+    color: hsl(0, 0%, 8%);
+    background-color: hsl(0, 0%, 94%);
+
+}
