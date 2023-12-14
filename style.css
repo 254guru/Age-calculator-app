@@ -101,3 +101,15 @@ button {
 button:hover {
     background-color: hsl(0, 0%, 8%);
 }
+
+.result-display {
+    margin-bottom: -10px;
+    font-size: 3rem;
+    font-weight: 700;
+    font-style: italic;
+    color: hsl(0, 0%, 8%);
+}
+
+span {
+    color: hsl(259, 100%, 65%);
+}
