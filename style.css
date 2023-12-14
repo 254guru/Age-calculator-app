@@ -60,5 +60,44 @@ input {
     font-weight: 700px;
     color: hsl(0, 0%, 8%);
     background-color: hsl(0, 0%, 94%);
+}
 
+input:focus {
+    font-weight: 600;
+    border: 0.1rem solid hsl(259, 100%, 65%);
+}
+
+.error {
+    color: hsl(0, 100%, 67%);
+    font-size: 12px;
+    font-style: italic;
+    margin: 10px 0;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.left-line hr,
+.right-line hr {
+    width: 30rem;
+    border: 1px solid hsl(0, 0%, 86%);
+}
+
+button {
+    background-color: hsl(259, 100%, 65%);
+    padding: .4rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.right-line {
+    display: none;
+}
+
+button:hover {
+    background-color: hsl(0, 0%, 8%);
 }
