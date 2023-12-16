@@ -8,30 +8,44 @@
   
   <title>Frontend Mentor | Age calculator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
+<body> 
+
   <main>
-    <section>
+    <section class="section">
       <form action="" id="form">
         <div class="date-container">
           <label for="date">Day</label>
-          <input type="text" id="date" placeholder="DD" minlength="1" maxlength="2">
+          <input
+           type="text"
+           id="date" 
+           placeholder="DD"
+           minlength="1"
+           maxlength="2"
+           />
           <em id="dError" class="error"></em>
         </div>
         <div class="date-container">
-          <label for="date">Month</label>
-          <input type="text" id="month" placeholder="MM" minlength="1" maxlength="2">
-          <em id="mError" class="error"></em>
+          <label for="month"> Month</label>
+          <input 
+          type="text" 
+          id="month" 
+          placeholder="MM"
+          minlength="1"
+          maxlength="2"
+          />
+          <em id="mError" class="error" ></em>
         </div>
         <div class="date-container">
-          <div class="date-container">
-            <label for="date">Year</label>
-            <input type="text" id="year" placeholder="YYYY" minlength="1" maxlength="4">
+          <label for="year">  Year</label>
+          <input 
+          type="text" 
+          id="year" 
+          placeholder="YYYY"
+          minlength="1"
+          maxlength="4"
+          />
+          <em id="yError" class="error"></em>
         </div>
       </form>
       <div class="button-container">
@@ -52,12 +66,15 @@
       <div class="result-display">
         <span>--</span> days
       </div>
+
     </section>
   </main>
   <script src="script.js"></script>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/254guru">Kevin Oluda</a>.
-  </div>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/254guru">Kevin Oluda</a>.
+    </div>
+  </footer>
 </body>
 </html>
