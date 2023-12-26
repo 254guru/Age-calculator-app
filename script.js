@@ -107,7 +107,11 @@ window.onload = function() {
             errorState(1, month, typeOfError[1], 'hsl(0, 100%, 67%)');
             return false;
         }
-        else if(month.value <= 0 || day.value > 12) {
+        else if(month.value > 12) {
+            errorState(1, month, typeOfError[3], 'hsl(0, 100%, 67%)');
+            return false;
+        }
+        else if(month.value <= 0 || day.value > 31) {
             errorState(1, day, typeOfError[3], 'hsl(0, 100%, 67%)');
             return false;
         }
@@ -126,16 +130,16 @@ window.onload = function() {
             errorState(2, year, typeOfError[1], 'hsl(0, 100%, 67%)');
             return false;
         }
-        else if(year.value > currentYear) {
-            errorState(3, year, typeOfError[4], 'hsl(0, 100%, 67%)');
-            return false;
-        }
-        else if(isLeapYear(day.value, month.value, year.value) == false){
+        else if(year.value < 1000) {
             errorState(2, year, typeOfError[0], 'hsl(0, 100%, 67%)');
             return false;
         }
         else if(year.value == currentYear && month.value > currentMonth){
             errorState(1, month, typeOfError[3], 'hsl(0, 100%, 67%)');
+            return false;
+        }
+        else if(isLeapYear(day.value, month.value, year.value) == false){
+            errorState(2, year, typeOfError[0], 'hsl(0, 100%, 67%)');
             return false;
         }
         else if(year.value == currentYear && month.value == currentMonth && day.value > currentDay){
