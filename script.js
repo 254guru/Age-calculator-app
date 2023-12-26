@@ -20,8 +20,8 @@ window.onload = function() {
     const typeOfError = [
         "",
         'This field is required',
-        'Must be a valid month',
         'Must be a valid year',
+        'Must be a valid month',
         'Must be a valid day',
         'Must be a valid date',
     ];
